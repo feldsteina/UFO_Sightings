@@ -9,7 +9,7 @@ d3.select('tbody')
     .enter()
     .append('tr')
     .html(function (d) {
-        return `<td>${d.datetime}</td><td>${d.city}</td><td>${d.state}</td><td>${d.country}</td><td>${d.shape}</td><td>${d.duationMinutes}</td><td>${d.comments}</td>`;
+        return `<td>${d.datetime}</td><td>${d.city}</td><td>${d.state}</td><td>${d.country}</td><td>${d.shape}</td><td>${d.durationMinutes}</td><td>${d.comments}</td>`;
     });
 
 var searchDate = d3.select("#filter-btn").on("click", function () {
@@ -38,6 +38,6 @@ var searchDate = d3.select("#filter-btn").on("click", function () {
         .enter()
         .append('tr')
         .html(function (dates) {
-            return `<td>${dates.datetime}</td><td>${dates.city}</td><td>${dates.state}</td><td>${dates.country}</td><td>${dates.shape}</td><td>${dates.duationMinutes}</td><td>${dates.comments}</td>`;
+            return `<td>${dates.datetime}</td><td>${dates.city}</td><td>${dates.state}</td><td>${dates.country}</td><td>${dates.shape}</td><td>${dates.durationMinutes}</td><td>${dates.comments}</td>`;
         });
 });
